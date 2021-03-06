@@ -58,8 +58,6 @@ const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json
             }).join('');
             suggestions.innerHTML = html;
             let value = document.getElementById('#search').value;
-            if (value.length > 0){
-                {searchInput.hide()}
         
         }
         const searchInput = document.querySelector('.search');
@@ -68,4 +66,3 @@ const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json
         searchInput.addEventListener('change', displayMatches);
         searchInput.addEventListener('keyup', displayMatches);
 
-        searchInput.removeEventListener('click', displayMatches);
